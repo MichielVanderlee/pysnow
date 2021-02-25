@@ -300,7 +300,7 @@ class BetweenCriterion(Criterion):
                 "Expected both `start` and `end` of type `int` "
                 "or instance of `datetime`, not %s and %s" % (type(start), type(end))
             )
-        
+
         return '{}BETWEEN{}'.format(term, dt_between)
 
 
